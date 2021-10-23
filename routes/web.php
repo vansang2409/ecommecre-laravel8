@@ -8,14 +8,14 @@ use App\Http\Livewire\Admin\AdminCategoryComponent;
 use App\Http\Livewire\Admin\AdminContactComponent;
 use App\Http\Livewire\Admin\AdminCouponsConponent;
 use Illuminate\Support\Facades\Route;
-use App\Http\livewire\HomeComponent;
-use App\Http\livewire\ShopComponent;
-use App\Http\livewire\CartComponent;
-use App\Http\livewire\CheckoutComponent;
-use App\Http\livewire\DetailsComponent;
-use App\Http\livewire\CategoryComponent;
-use App\Http\livewire\User\UserDashboardComponent;
-use App\Http\livewire\Admin\AdminDashboardComponent;
+use App\Http\Livewire\HomeComponent;
+use App\Http\Livewire\ShopComponent;
+use App\Http\Livewire\CartComponent;
+use App\Http\Livewire\CheckoutComponent;
+use App\Http\Livewire\DetailsComponent;
+use App\Http\Livewire\CategoryComponent;
+use App\Http\Livewire\User\UserDashboardComponent;
+use App\Http\Livewire\Admin\AdminDashboardComponent;
 use App\Http\Livewire\Admin\AdminEditCategoryComponent;
 use App\Http\Livewire\Admin\AdminEditCouponConponent;
 use App\Http\Livewire\Admin\AdminEditHomeSliderComponent;
@@ -37,6 +37,7 @@ use App\Http\Livewire\User\UserReviewComponent;
 use App\Http\Livewire\WishlistComponent;
 use App\Models\Category;
 use App\Models\Contact;
+use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
