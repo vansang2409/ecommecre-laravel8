@@ -53,10 +53,28 @@ use Illuminate\Support\Facades\Artisan;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/clear-cache', function() {
-    Artisan::call('cache:clear');
-    return "Cache is cleared";
+//Clear route cache:
+Route::get('/route-cache', function() {
+    $exitCode = Artisan::call('route:cache');
+    return 'Routes cache cleared';
 });
+
+//Clear config cache:
+Route::get('/config-cache', function() {
+    $exitCode = Artisan::call('config:cache');
+    return 'Config cache cleared';
+}); 
+
+// Clear application cache:
+Route::get('/clear-cache', function() {
+    $exitCode = Artisan::call('cache:clear');
+    return 'Application cache cleared';
+});
+ // Clear view cache:
+ Route::get('/view-clear', function() {
+    $exitCode = Artisan::call('view:clear');
+    return 'View cache cleared';
+}); 
 Route::get('/',HomeComponent::class)->name('home');
 Route::get('/shop',ShopComponent::class)->name('shop');
 Route::get('/cart',CartComponent::class)->name('product.cart');
